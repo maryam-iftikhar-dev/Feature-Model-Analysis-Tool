@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<featureModel>
+    <feature name="ShoppingApp">
+        <feature name="Authentication" mandatory="true"/>
+        <feature name="Checkout">
+            <group type="xor">
+                <feature name="CreditCard"/>
+                <feature name="Paypal"/>
+            </group>
+        </feature>
+        <feature name="Payment"/>
+        <feature name="Shipping"/>
+        <feature name="Promotions"/>
+        <feature name="Notifications"/>
+    </feature>
+    <constraints>
+        <constraint>
+            <englishStatement>Payment requires Authentication.</englishStatement>
+        </constraint>
+        <constraint>
+            <englishStatement>Shipping requires Checkout.</englishStatement>
+        </constraint>
+        <constraint>
+            <englishStatement>Promotions exclude Notifications.</englishStatement>
+        </constraint>
+    </constraints>
+</featureModel>
