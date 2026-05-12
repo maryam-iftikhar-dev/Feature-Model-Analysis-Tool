@@ -123,6 +123,11 @@ In the `Codebase Analysis` tab:
 
 - `sample_feature_model.xml`: example feature model with features like `Authentication`, `Checkout`, `Payment`, `Shipping`, `Promotions`.
 - `sample_codebase/`: a small sample project with 12 files and dependency relationships.
+- 
+## Team Members
+
+- **Nabeeha Islam** - [@NabeehaIslam](https://github.com/NabeehaIslam)
+- **Ayesha Gohar** - [@Ayesha-134](https://github.com/Ayesha-134)
 
 ## Notes
 
